@@ -1,0 +1,11 @@
+{
+  "name": "ship",
+  "description": "Think. Build. Ship. A Claude Code plugin that combats your worst instincts and gets code out the door.",
+  "plugins": [
+    {
+      "name": "ship",
+      "description": "Five skills, zero ceremony. Gut checks before you build, scope checks while you build, honest reviews before you ship.",
+      "source": "."
+    }
+  ]
+}
