@@ -1,0 +1,10 @@
+{
+  "name": "ship",
+  "skills": [
+    "./skills/init",
+    "./skills/think",
+    "./skills/focus",
+    "./skills/review",
+    "./skills/debrief"
+  ]
+}
