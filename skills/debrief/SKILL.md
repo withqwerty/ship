@@ -1,5 +1,5 @@
 ---
-name: debrief
+name: ship-debrief
 description: This skill should be used when the user wants a weekly check-in on how they're building. Triggers on "ship debrief", "weekly debrief", "how am I doing", "debrief with dhh", "update my profile", "ship retro", or when another ship skill nudges that a debrief is overdue. Reviews recent work, asks a few questions, and updates .claude/ship.local.md.
 argument-hint: (no arguments needed)
 allowed-tools: Read, Glob, Grep, Bash, AskUserQuestion, Write

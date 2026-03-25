@@ -1,5 +1,5 @@
 ---
-name: init
+name: ship-init
 description: This skill should be used when the user asks to "set up ship", "configure ship", "ship init", "initialize ship", "create my profile", "set up my profile", or when using the ship plugin for the first time. Creates a .claude/ship.local.md profile that calibrates all other ship skills.
 argument-hint: (no arguments needed)
 allowed-tools: AskUserQuestion, Write, Read, Glob

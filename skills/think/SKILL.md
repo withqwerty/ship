@@ -1,5 +1,5 @@
 ---
-name: think
+name: ship-think
 description: This skill should be used when the user is about to start building something and needs a gut check first. Triggers on "ship think", "before I build this", "should I build this", "sanity check this idea", "gut check", or when the user describes a feature they're about to implement and would benefit from hard questions before coding.
 argument-hint: <what you're about to build (or leave blank to use conversation context)>
 allowed-tools: Read, Glob, Grep, AskUserQuestion

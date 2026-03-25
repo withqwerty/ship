@@ -1,5 +1,5 @@
 ---
-name: review
+name: ship-review
 description: This skill should be used when the user is about to ship and wants a pre-merge code review. Triggers on "ship review", "review this before I ship", "pre-ship review", "review my changes", "code review", "is this ready to ship", "brutal review", "kind review", or when the user has finished building and wants feedback before merging or deploying.
 argument-hint: "[brutal|kind]" (optional — defaults to profile setting or brutal)
 allowed-tools: Read, Glob, Grep, Bash, AskUserQuestion
