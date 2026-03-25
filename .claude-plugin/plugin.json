@@ -1,0 +1,9 @@
+{
+  "name": "ship",
+  "version": "0.1.0",
+  "description": "Think. Build. Ship. A brutally simple workflow that combats your worst instincts and gets code out the door.",
+  "author": {
+    "name": "Rahul Keerthi"
+  },
+  "license": "MIT"
+}
