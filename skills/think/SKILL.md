@@ -19,7 +19,7 @@ If the user provided an argument, use that. Otherwise, read the recent conversat
 
 Check `.claude/ship.local.md` for user context. If it doesn't exist, proceed without it — but mention they can run `/ship:init` to calibrate things.
 
-The profile shapes the questions. A non-technical founder gets different questions than a senior engineer. An MVP-stage project gets different scrutiny than a mature one.
+The profile shapes the questions. Read both the YAML settings and the product brief (the markdown body). The "What moves the needle" section tells you what actually matters for this product right now. If the thing they want to build doesn't connect to those needle-movers, that's your most important question.
 
 ### 3. Read the codebase (briefly)
 

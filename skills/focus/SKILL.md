@@ -23,7 +23,7 @@ Capture this as a single sentence. This is the anchor everything gets measured a
 
 ### 2. Read the profile
 
-Check `.claude/ship.local.md` for context. Project stage matters here — an MVP can tolerate more "just ship it" advice; a mature codebase needs more care about what you're leaving half-done.
+Check `.claude/ship.local.md` for context. Read the product brief — the "What moves the needle" section is your reference for what matters. If the drift is toward something that serves a needle-mover, it might be worth keeping. If it's away from all of them, cut it.
 
 ### 3. Examine what's actually changed
 

@@ -69,12 +69,19 @@ Strict, fair, ultimately helpful. Not a report — a conversation. Format:
 
 ### 6. Update the profile
 
-If the user agrees to any suggested changes, update `.claude/ship.local.md` with:
-- The agreed profile changes
+Always update `.claude/ship.local.md` with:
+- Any agreed YAML frontmatter changes
 - `last-debrief: [today's date in YYYY-MM-DD]`
 - Remove `debrief-deferred` if it was set
 
-If the user doesn't want to change anything, still update `last-debrief` to today's date.
+**Evolve the product brief.** The markdown body below the frontmatter is a living document. Update it based on the debrief conversation:
+
+- **"What moves the needle"** — Rewrite if priorities shifted. Remove items that were achieved or no longer matter. Add new ones that emerged. Keep it to 2-3 items max. Frame as outcomes, not tasks.
+- **"Current reality"** — Rewrite to reflect where the product actually is *now*. What changed this week? What's working? What's still unknown? This should always feel current, not stale.
+
+Write these sections like Jason Fried and DHH collaborating — clear, concise, zero corporate language. The product brief should be something the user can glance at in 10 seconds and know exactly what matters.
+
+If nothing meaningful changed, leave the brief alone. Don't rewrite for the sake of rewriting.
 
 ### 7. Handle deferral
 

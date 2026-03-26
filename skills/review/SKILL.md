@@ -44,7 +44,7 @@ Skip entirely:
 
 ## Gather context
 
-**Read the profile** (`.claude/ship.local.md`) for `always-flag`, `project-stage`, and `priorities`.
+**Read the profile** (`.claude/ship.local.md`) for settings and the product brief. The "What moves the needle" and "Current reality" sections tell you what matters for this product — use them to calibrate what's worth flagging vs. what's noise.
 
 **Read the diff.** Run `git diff main...HEAD` (or appropriate base branch) for the full changeset. If working directly on main, use `git diff` for staged + unstaged. Also run `git diff --stat` for the overview.
 
