@@ -1,6 +1,6 @@
 ---
 name: ship-init
-description: This skill should be used when the user asks to "set up ship", "configure ship", "ship init", "initialize ship", "create my profile", "set up my profile", or when using the ship plugin for the first time. Creates a .claude/ship.local.md profile that calibrates all other ship skills.
+description: Use this skill when the user wants to set up, configure, or initialize the ship plugin, create or update their ship profile, change their review mode, update their product brief, or edit .claude/ship.local.md. Trigger on "ship init", "set up ship", "configure ship", "create my profile", "update my profile", "change review mode to brutal/kind", or when any other ship skill detects that .claude/ship.local.md does not exist. Also use when the user says they've changed roles, shifted priorities, or moved to a new project stage.
 argument-hint: (no arguments needed)
 allowed-tools: AskUserQuestion, Write, Read, Glob, Bash
 ---

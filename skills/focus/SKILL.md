@@ -1,6 +1,6 @@
 ---
 name: ship-focus
-description: This skill should be used when the user is mid-build and drifting, scope is creeping, new requirements have surfaced, or focus is lost. Triggers on "ship focus", "am I scope creeping", "what should I cut", "I'm losing focus", "this is getting bigger than expected", "refocus", "scope check", or when the user expresses frustration about a task growing beyond its original intent.
+description: Use this skill when the user is mid-build and drifting, scope is creeping, or focus is lost. Trigger on "ship focus", "scope check", "refocus", "what should I cut", "am I scope creeping", "this is getting bigger than expected", "I'm losing focus", "I keep finding things to improve", "should I stop and ship what I have", or "new requirements came in". Also trigger when the user expresses frustration about a task growing beyond its original intent, mentions touching many more files than expected, or asks whether to change direction mid-build. Do NOT trigger for pre-build gut checks (use ship-think) or post-build reviews (use ship-review).
 argument-hint: <what you originally set out to build (optional — will infer from context)>
 allowed-tools: Read, Glob, Grep, Bash, AskUserQuestion
 ---

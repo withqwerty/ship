@@ -1,6 +1,6 @@
 ---
 name: ship-think
-description: This skill should be used when the user is about to start building something and needs a gut check first. Triggers on "ship think", "before I build this", "should I build this", "sanity check this idea", "gut check", or when the user describes a feature they're about to implement and would benefit from hard questions before coding.
+description: Use this skill when the user is about to start building something and would benefit from hard questions before coding. Trigger on "ship think", "gut check", "sanity check", "should I build this", "before I start", "does this make sense", "is this worth building", "is this overkill", or "thoughts on this approach". Also trigger when the user describes a feature, migration, rewrite, or architectural change they're planning — even if they don't explicitly ask for a gut check. If someone says "I'm thinking of building X" or "I want to add X", this skill should activate to challenge assumptions before they start coding. Do NOT trigger for bug fixes, code explanations, or tasks already in progress.
 argument-hint: <what you're about to build (or leave blank to use conversation context)>
 allowed-tools: Read, Glob, Grep, AskUserQuestion
 ---
