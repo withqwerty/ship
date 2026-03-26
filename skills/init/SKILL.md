@@ -2,7 +2,7 @@
 name: ship-init
 description: This skill should be used when the user asks to "set up ship", "configure ship", "ship init", "initialize ship", "create my profile", "set up my profile", or when using the ship plugin for the first time. Creates a .claude/ship.local.md profile that calibrates all other ship skills.
 argument-hint: (no arguments needed)
-allowed-tools: AskUserQuestion, Write, Read, Glob
+allowed-tools: AskUserQuestion, Write, Read, Glob, Bash
 ---
 
 # Ship Init
@@ -51,7 +51,18 @@ last-debrief: never
 
 The `always-flag` field defaults to `[security, data loss]`. The `last-debrief` field tracks when `/ship:debrief` was last run. Both can be edited by the user directly.
 
-### 4. Confirm
+### 4. Shared repo check
+
+Ask: "Is this repo shared with others, or just you?" (If it's just them, the profile can be committed. If shared, it should stay local.)
+
+If shared (or the user says they'd rather keep it private):
+- Check if `.claude/*.local.md` is already in `.gitignore`. If not, append it.
+- Briefly confirm: "Added `.claude/*.local.md` to .gitignore — your profile won't be committed."
+
+If solo / user wants to commit it:
+- Do nothing. The file will be tracked normally.
+
+### 5. Confirm
 
 Show the user what was written. Tell them they can re-run `/ship:init` anytime or edit the file directly.
 
