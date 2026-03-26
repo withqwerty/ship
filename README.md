@@ -10,9 +10,8 @@ A Claude Code plugin that combats your worst instincts as a founder/engineer —
 
 ```
 /plugin marketplace add withqwerty/plugins
+/plugin install ship@withqwerty
 ```
-
-Then open `/plugin`, find **ship** in the Discover tab, and install it. Choose **User** scope to make it available across all your projects.
 
 ### Any coding agent (via skills CLI)
 
