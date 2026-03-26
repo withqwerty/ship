@@ -25,28 +25,37 @@ The profile shapes the questions. Read both the YAML settings and the product br
 
 Glance at the project structure and any files directly relevant to what they're describing. The goal is to ground the questions in reality — not to do a full audit. Spend no more than a few file reads here.
 
-### 4. Ask the hard questions
+### 4. State your assumptions
 
-Output 3-5 questions. Not a checklist — a conversation. Each question should:
+Before asking anything, briefly state what you understand about what they want and the assumptions you're making. One or two sentences. This grounds the conversation — the user can correct you immediately if you're off base, and it shows you're engaging with their actual idea rather than pattern-matching.
 
-- Challenge an assumption they're making
-- Surface a simpler alternative they might be ignoring
-- Force a decision they're deferring
-- Expose scope that's hiding inside what sounds simple
+Example: "I'm reading this as: you want real-time goal alerts pushed to users across three channels, built into the marketing site. That means a backend, user accounts, and a live data source — none of which exist here."
 
-**Calibrate to the user.** The profile tells you who they are — match the level of the questions to the level of the person. A non-technical founder needs different scrutiny than a senior engineer. An MVP-stage project gets different questions than a mature codebase. Don't ask a founder about architectural patterns; don't ask a senior engineer if they've considered a no-code tool. Read the room.
+### 5. Ask the hard questions (cascading)
+
+Output 2-5 questions, structured as a cascade — each question builds on the previous, moving from most fundamental to most specific:
+
+**Level 1: Do you already have this?** Check the codebase. If something close already exists, say so first. The user may not know or may have forgotten. If this resolves the ask, stop here.
+
+**Level 2: What do you actually mean?** If the request is ambiguous, clarify before challenging. "Share button" could mean link sharing, image sharing, or native share sheet. Don't challenge a requirement you haven't understood yet.
+
+**Level 3: Is this the right thing to build?** Now challenge. Does this connect to a needle-mover? Is the scope honest? Is there a simpler version? Is this hiding from harder non-engineering work?
+
+**Level 4: Is this the right approach?** If the what is right but the how is off — wrong tool, wrong architecture, wrong sequence — say so.
+
+Not every question cascade needs all four levels. If the codebase already has what they need, one question at Level 1 might be the whole output. If the idea is clear and sound but over-scoped, skip to Level 3. The cascade is a thinking framework, not a template to fill out.
+
+**Calibrate to the user.** The profile tells you who they are — match the level of the questions to the level of the person. Don't ask a founder about architectural patterns; don't ask a senior engineer if they've considered a no-code tool. Read the room.
 
 **Question format:**
 
-Each question should be 1-2 sentences. Direct. No preamble, no "have you considered...", no softening. Frame them as the questions a brutally honest co-founder would ask.
+Each question should be 1-2 sentences max. A bold lead statement, then the question. No multi-paragraph explanations — if you need more than two sentences, you're explaining instead of asking.
 
 Example output:
 
-> **1. What's the actual user problem?** You described the feature but not why someone needs it. If you can't say "users are doing X and it's painful because Y", you're building for yourself, not them.
+> **You already have share infrastructure.** `ChartActions.astro` has a "Share as Image" button and a `<slot />` for extras. The native share sheet on mobile already includes X. What's the gap you're actually trying to fill — desktop only?
 >
-> **2. The settings page is scope creep.** You said "simple config" but that's a UI, a persistence layer, and validation. Can this be a config file for now?
->
-> **3. You already have something close.** `src/utils/notify.ts` does 60% of what you described. Have you looked at extending it instead of building from scratch?
+> **If it's just a desktop X button, the slot is already there.** Drop an `<a href="https://x.com/intent/tweet?url=...">` in the slot. Zero component changes. Have you tried that?
 
 ### 5. Wait
 
