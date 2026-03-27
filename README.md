@@ -2,16 +2,29 @@
 
 Think. Build. Ship.
 
-A Claude Code plugin that combats your worst instincts as a founder/engineer — the urge to over-scope, over-engineer, and never quite ship. Five skills, zero ceremony.
+A plugin for AI coding tools that stops you from over-building and helps you actually ship.
 
-## Install
-
-### Claude Code (via marketplace)
+## Quick start
 
 ```
 /plugin marketplace add withqwerty/plugins
 /plugin install ship@withqwerty
+/ship:init
 ```
+
+Three commands. The init asks you a few questions and writes a small file that all the other commands read. Then just use the commands when you need them — they're not a workflow, they're tools in a drawer.
+
+## What it does
+
+Five commands that intervene at the moments that matter:
+
+- **`/ship:init`** — Tell it who you are, what you're building, and what matters. Takes 2 minutes. It remembers.
+- **`/ship:think`** — Before you build something, it asks the hard questions you're avoiding. Sometimes it just says "go build it."
+- **`/ship:focus`** — When you're mid-build and the thing keeps growing, it looks at your git diff and tells you what to cut.
+- **`/ship:review`** — Before you merge, it reviews your code. Two modes: brutal (high bar) or kind (flags only what'll break).
+- **`/ship:debrief`** — Weekly check-in. Looks at what you actually shipped, asks if your priorities still match your behavior, updates your profile.
+
+## Other ways to install
 
 ### Any coding agent (via skills CLI)
 
@@ -27,35 +40,6 @@ npx skills add withqwerty/ship
 git clone https://github.com/withqwerty/ship.git
 claude --plugin-dir /path/to/ship
 ```
-
-## Skills
-
-### `/ship:init`
-
-Set up your profile and product brief. A few questions about who you are, what you're building, and what would actually move the needle. Writes `.claude/ship.local.md` — part settings file, part living product brief that every other skill reads. Run it once, evolve it with debriefs.
-
-### `/ship:think`
-
-Before you write a line of code. Reads what you're about to build, checks it against your needle-movers, and asks 3-5 hard questions — the ones you're avoiding. If the idea is good and simple, it'll say so.
-
-### `/ship:focus`
-
-When you're mid-build and drifting. Reads your `git diff`, compares it to what you set out to do, and tells you what's core, what's adjacent, and what's scope creep. Names specific files to cut or stash.
-
-### `/ship:review`
-
-Before you merge. One thorough review covering correctness, security, performance, and simplicity. Two modes:
-
-- **Brutal** (default) — Questions every abstraction. Calls out what shouldn't exist.
-- **Kind** — Same eye, different bar. Flags what will actually break and lets the rest slide.
-
-Usage: `/ship:review` or `/ship:review kind`
-
-Every review ends with a verdict: **Ship it**, **Fix these first**, or **Needs rework**.
-
-### `/ship:debrief`
-
-Weekly check-in. Reviews where your time actually went, asks what moved the needle, and updates your product brief. The answer might be more code — or it might be "talk to five users before writing another line." Strict, fair, ultimately helpful.
 
 ## Contributing
 
