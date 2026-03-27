@@ -4,6 +4,8 @@ Think. Build. Ship.
 
 A plugin for AI coding tools that stops you from over-building and helps you actually ship.
 
+**[ship.withqwerty.com](https://ship.withqwerty.com)**
+
 ## Quick start
 
 ```
